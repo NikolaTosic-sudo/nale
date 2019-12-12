@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <script src="./js/all.js"></script>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- regular css -->
+    <link rel="stylesheet" href="./css/2ndpage.css">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+    <title>Skins and abilities</title>
+</head>
+<body>
+
+       <div class="container sve tab-panels">
+            <div class="row ar">
+                <div class="col-md-3 col-12 pr-0 br" align="center">
+                    <ul class="tabs">
+                        <li data-panel="panel1">
+                            <button class="btn">
+                                Skins
+                            </button>
+                        </li>
+                        <li data-panel="panel2">
+                            <button class="btn">
+                                Abilities
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-9 col-12 pl-0 cr">
+
+                    <!-- Container for the image gallery -->
+                    <div class="container panel active pl-0" id="panel1">
+
+                        <!-- Images -->
+                        <div class="slide">
+                            <img src="./images/regularNasus.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="slide">
+                            <img src="./images/nasus_neznam.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="slide">
+                            <img src="./images/WorldBreaker.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="slide">
+                            <img src="./images/ArchDuke.jpg" style="width:100%;">
+                        </div>
+                    
+                        <div class="slide">
+                            <img src="./images/nasusInfernal.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="slide">
+                            <img src="./images/nasusGod.jpg" style="width:100%">
+                        </div>
+                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                        <!-- Image text -->
+                        <div class="caption-container">
+                        <p id="caption"></p>
+                        </div>
+                    
+                        <!-- Thumbnail images -->
+                        <div class="row mt-2">
+                        <div class="column">
+                            <img class="demo cursor" src="./images/regularNasus.jpg" style="width:100%" onclick="currentSlide(1)" alt="Regular Nasus">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./images/nasus_neznam.jpg" style="width:100%" onclick="currentSlide(2)" alt="Dread Knight Nasus">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./images/WorldBreaker.jpg" style="width:100%" onclick="currentSlide(3)" alt="WorldBreaker Nasus">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./images/ArchDuke.jpg" style="width:100%" onclick="currentSlide(4)" alt="ArchDuke Nasus">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./images/nasusInfernal.jpg" style="width:100%" onclick="currentSlide(5)" alt="Infernal Nasus">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./images/nasusGod.jpg" style="width:100%" onclick="currentSlide(6)" alt="Lunar Guardian Nasus">
+                        </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 2nd panel, Abilities Videos -->
+
+                    <div class="panel" id="panel2">
+                            <ul class="tabs2 m-0">
+                                <li data-target="P" class="active"><img src="./images/Nasus_Passive.png" alt="pass"> P</li>
+                                <li data-target="Q"><img src="./images/NasusQ.png" alt=""> Q</li>
+                                <li data-target="W"><img src="./images/NasusW.png" alt=""> W</li>
+                                <li data-target="E"><img src="./images/NasusE.png" alt=""> E</li>
+                                <li data-target="R"><img src="./images/NasusR.png" alt=""> R</li>
+                            </ul>
+                            
+                            <!-- Passive -->
+
+                            <div id="P" class="panell active">
+                                <div class="card">
+                                    <video src="./videos/NasusPassive.webm" height="80%" controls></video>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Soul Eater</h5>
+                                        <p class="card-text text-center">Nasus drains his foe's spiritual energy, giving him bonus Life Steal.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Q, Siphoning Strike-->
+
+                            <div id="Q" class="panell">
+                                <div class="card">
+                                    <video src="./videos/NasusQ.webm" height="80%" controls></video>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Siphoning Strike</h5>
+                                        <p class="card-text text-center">Nasus strikes his foe, dealing damage and increasing the power of his future Siphoning Strikes if he slays his target.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- W, Wither -->
+
+                            <div id="W" class="panell">
+                                <div class="card">
+                                    <video src="./videos/NasusW.webm" height="80%" controls></video>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Wither</h5>
+                                        <p class="card-text text-center">Nasus ages an enemy champion, decelerating their Movement and Attack Speeds over time.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- E, Spirit Fire -->
+
+                            <div id="E" class="panell">
+                                <div class="card">
+                                    <video src="./videos/NasusE.webm" height="80%" controls></video>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Spirit Fire</h5>
+                                        <p class="card-text text-center">Nasus unleashes a spirit flame at a location, dealing damage and reducing the Armor of enemies who stand on it.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- R, Fury of the Sands -->
+
+                            <div id="R" class="panell">
+                                <div class="card">
+                                    <video src="./videos/NasusR.webm" height="80%" controls></video>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Fury of the Sands</h5>
+                                        <p class="card-text text-center">Nasus unleashes a mighty sandstorm that batters nearby enemies. While the storm rages, he gains increased Health, Attack Range, damages nearby enemies, has a reduced cooldown on Siphoning Strike, and gains bonus Armor and Magic Resistance for the duration.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+       </div>
+
+
+            <!-- navbar -->
+
+                <navbar class="navbar navbar-dark navbar-expand-lg mt-5">
+
+                    <!-- expand button -->
+
+                    <button class="navbar-toggler navbtn" type="button" data-toggle="collapse" data-target="#nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- nav-items -->
+
+                    <div class="navbar-collapse collapse" id="nav">
+                        <ul class="navbar-nav d-flex justify-content-around text-uppercase" style="width: 100%; font-size: 20px;">
+
+                            <li class="nav-item">
+                                <a href="./index.html" class="nav-link mx-3">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="./2ndpage.html" class="nav-link mx-3">Skins and Abilities</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </navbar>
+
+
+  <!-- javaScript -->
+    <script src="./js/slideShow.js"></script>
+    <script src="./js/mainPanel.js"></script>
+    <script src="./js/abilitiesPanel.js"></script>
+  <!-- jquery -->
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

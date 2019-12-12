@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    background-image: url(../images/nasusGod.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* place it almost in center */
+
+.sve {
+  height: 70vh;
+}
+
+.sve .row {
+    margin-top: 10%;
+}
+
+/* make that button beautiful */
+
+ul {
+    list-style-type: none;
+}
+
+.btn {
+    background-image: linear-gradient(#e3cb83, black);
+    color: white;
+    width: 100px
+}
+
+/* show and hide panels */
+
+.tab-panels .ar .cr .panel {
+  display: none;
+}
+
+.tab-panels .ar .cr .panel.active {
+  display: block;
+}
+
+.tab-panels .ar .cr .panel .panell {
+  display: none;
+}
+
+.tab-panels .ar .cr .panel .panell.active {
+  display: block;
+}
+
+/* list for abilities */
+
+.tab-panels .tabs2 li {
+  list-style-type: none;
+  display: inline-block;
+  background-image: linear-gradient(#e3cb83, black);
+  padding: 3px 10px;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.tab-panels .tabs2 li.active {
+  color: #fff;
+  background: #666;
+}
+
+/* fix that img */
+
+.tab-panels .tabs2 li img {
+  height:20px;
+}
+
+/* let's not make that video/card too big */
+
+#panel2 {
+  position: relative;
+  bottom: 30px;
+}
+
+.card {
+  height: 70vh;
+  border: none;
+}
+
+.card-body {
+  background-image: linear-gradient(#e3cb83, black);
+  color: white;
+}
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .slide {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Container for image */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images and height */
+  .demo {
+    opacity: 0.6;
+    height: 100%;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .hide {
+      display: none;
+  }
+
