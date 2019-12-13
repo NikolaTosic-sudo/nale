@@ -1,8 +1,8 @@
 body {
     margin: 0;
     background-image: url(../images/nasusGod.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /* place it almost in center */
@@ -71,9 +71,11 @@ ul {
 
 /* let's not make that video/card too big */
 
-#panel2 {
-  position: relative;
-  bottom: 30px;
+@media (min-width: 768px ) {
+  #panel2 {
+    position: relative;
+    bottom: 30px;
+  }
 }
 
 .card {
@@ -165,5 +167,19 @@ ul {
 
   .hide {
       display: none;
+  }
+
+  /* Margins to look better on small displays */
+
+  @media screen and (max-width: 768px){
+    .navmar {
+      margin-top: 170px;
+    }
+  } 
+
+  @media screen and (max-height: 430px){
+    .navmar {
+      margin-top: 200px;
+    }
   }
 
